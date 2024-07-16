@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF73B2EF-258D-4E9C-B171-750B9D6DB4E9}</ProjectGuid>
+    <RootNamespace>VocalTractLab2</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\wxWidgets-3.1.0\include\msvc;C:\wxWidgets-3.1.0\lib\vc_lib\mswud;C:\wxWidgets-3.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__WXMSW__;__WXDEBUG__;_CRT_SECURE_NO_DEPRECATE;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;winmm.lib;comctl32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wxmsw31ud_core.lib;wxbase31ud.lib;wxpngd.lib;wxzlibd.lib;wxjpegd.lib;wxtiffd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\wxWidgets-3.1.0\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\wxWidgets-3.1.0\include\msvc;C:\wxWidgets-3.1.0\lib\vc_lib\mswud;C:\wxWidgets-3.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__WXMSW__;__WXDEBUG__;_CRT_SECURE_NO_DEPRECATE;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;winmm.lib;comctl32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wxmsw31ud_core.lib;wxbase31ud.lib;wxpngd.lib;wxzlibd.lib;wxjpegd.lib;wxtiffd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\wxWidgets-3.1.0\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\wxWidgets-3.1.0\lib\vc_lib\mswu;C:\wxWidgets-3.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;__WXMSW__;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wxbase31u.lib;wxmsw31u_core.lib;wxmsw31u_gl.lib;wxpng.lib;wxzlib.lib;wxmsw31u_adv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\wxWidgets-3.1.0\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <StackReserveSize>
+      </StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\wxWidgets-3.1.3\lib\vc_x64_lib\mswu;C:\wxWidgets-3.1.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;__WXMSW__;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wxbase31u.lib;wxmsw31u_core.lib;wxmsw31u_gl.lib;wxpng.lib;wxzlib.lib;wxmsw31u_adv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\wxWidgets-3.1.3\lib\vc_x64_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <StackReserveSize>
+      </StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Backend\GeometricGlottis.cpp" />
+    <ClCompile Include="Sources\Backend\Synthesizer.cpp" />
+    <ClCompile Include="Sources\Backend\VocalTractLabApi.cpp" />
+    <ClCompile Include="Sources\Frontend\AnalysisResultsDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\AnalysisSettingsDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\AnatomyParamsDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\AnnotationDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\Application.cpp" />
+    <ClCompile Include="Sources\Frontend\AreaFunctionPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\BasicPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\ColorScale.cpp" />
+    <ClCompile Include="Sources\Frontend\CrossSectionPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\Data.cpp" />
+    <ClCompile Include="Sources\Frontend\EmaConfigDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\FdsOptionsDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\FormantOptimizationDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\GesturalScorePage.cpp" />
+    <ClCompile Include="Sources\Frontend\GesturalScorePicture.cpp" />
+    <ClCompile Include="Sources\Frontend\GlottisDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\GlottisPanel.cpp" />
+    <ClCompile Include="Sources\Frontend\GlottisPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\Graph.cpp" />
+    <ClCompile Include="Sources\Frontend\LfPulseDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\LfPulsePicture.cpp" />
+    <ClCompile Include="Sources\Frontend\MainWindow.cpp" />
+    <ClCompile Include="Sources\Frontend\PhoneticParamsDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\PoleZeroDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\PoleZeroPlot.cpp" />
+    <ClCompile Include="Sources\Frontend\SignalComparisonPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\SignalPage.cpp" />
+    <ClCompile Include="Sources\Frontend\SignalPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\SilentMessageBox.cpp" />
+    <ClCompile Include="Sources\Frontend\SimpleSpectrumPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\SpectrogramPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\SpectrogramPlot.cpp" />
+    <ClCompile Include="Sources\Frontend\SpectrumOptionsDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\SpectrumPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\SynthesisThread.cpp" />
+    <ClCompile Include="Sources\Frontend\TdsOptionsDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\TdsPage.cpp" />
+    <ClCompile Include="Sources\Frontend\TdsSpatialSignalPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\TdsTimeSignalPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\TdsTubePicture.cpp" />
+    <ClCompile Include="Sources\Frontend\TimeAxisPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\TransitionDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\VocalTractDialog.cpp" />
+    <ClCompile Include="Sources\Frontend\VocalTractPage.cpp" />
+    <ClCompile Include="Sources\Frontend\VocalTractPicture.cpp" />
+    <ClCompile Include="Sources\Frontend\VocalTractShapesDialog.cpp" />
+    <ClCompile Include="Sources\Backend\AnatomyParams.cpp" />
+    <ClCompile Include="Sources\Backend\Dsp.cpp" />
+    <ClCompile Include="Sources\Backend\F0EstimatorYin.cpp" />
+    <ClCompile Include="Sources\Backend\Geometry.cpp" />
+    <ClCompile Include="Sources\Backend\GesturalScore.cpp" />
+    <ClCompile Include="Sources\Backend\Glottis.cpp" />
+    <ClCompile Include="Sources\Backend\IirFilter.cpp" />
+    <ClCompile Include="Sources\Backend\ImpulseExcitation.cpp" />
+    <ClCompile Include="Sources\Backend\LfPulse.cpp" />
+    <ClCompile Include="Sources\Backend\Matrix2x2.cpp" />
+    <ClCompile Include="Sources\Backend\PoleZeroPlan.cpp" />
+    <ClCompile Include="Sources\Backend\Sampa.cpp" />
+    <ClCompile Include="Sources\Backend\SegmentSequence.cpp" />
+    <ClCompile Include="Sources\Backend\Signal.cpp" />
+    <ClCompile Include="Sources\Backend\SoundLib.cpp" />
+    <ClCompile Include="Sources\Backend\Splines.cpp" />
+    <ClCompile Include="Sources\Backend\StaticPhone.cpp" />
+    <ClCompile Include="Sources\Backend\Surface.cpp" />
+    <ClCompile Include="Sources\Backend\TdsModel.cpp" />
+    <ClCompile Include="Sources\Backend\TimeFunction.cpp" />
+    <ClCompile Include="Sources\Backend\TlModel.cpp" />
+    <ClCompile Include="Sources\Backend\TriangularGlottis.cpp" />
+    <ClCompile Include="Sources\Backend\Tube.cpp" />
+    <ClCompile Include="Sources\Backend\TwoMassModel.cpp" />
+    <ClCompile Include="Sources\Backend\VocalTract.cpp" />
+    <ClCompile Include="Sources\Backend\VoiceQualityEstimator.cpp" />
+    <ClCompile Include="Sources\Backend\VowelLf.cpp" />
+    <ClCompile Include="Sources\Backend\XmlHelper.cpp" />
+    <ClCompile Include="Sources\Backend\XmlNode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\Backend\AudioFile.h" />
+    <ClInclude Include="Sources\Backend\Constants.h" />
+    <ClInclude Include="Sources\Backend\GeometricGlottis.h" />
+    <ClInclude Include="Sources\Backend\Synthesizer.h" />
+    <ClInclude Include="Sources\Backend\VocalTractLabApi.h" />
+    <ClInclude Include="Sources\Frontend\AnalysisResultsDialog.h" />
+    <ClInclude Include="Sources\Frontend\AnalysisSettingsDialog.h" />
+    <ClInclude Include="Sources\Frontend\AnatomyParamsDialog.h" />
+    <ClInclude Include="Sources\Frontend\AnnotationDialog.h" />
+    <ClInclude Include="Sources\Frontend\Application.h" />
+    <ClInclude Include="Sources\Frontend\AreaFunctionPicture.h" />
+    <ClInclude Include="Sources\Frontend\BasicPicture.h" />
+    <ClInclude Include="Sources\Frontend\ColorScale.h" />
+    <ClInclude Include="Sources\Frontend\CrossSectionPicture.h" />
+    <ClInclude Include="Sources\Frontend\Data.h" />
+    <ClInclude Include="Sources\Frontend\EmaConfigDialog.h" />
+    <ClInclude Include="Sources\Frontend\FdsOptionsDialog.h" />
+    <ClInclude Include="Sources\Frontend\FormantOptimizationDialog.h" />
+    <ClInclude Include="Sources\Frontend\GesturalScorePage.h" />
+    <ClInclude Include="Sources\Frontend\GesturalScorePicture.h" />
+    <ClInclude Include="Sources\Frontend\GlottisDialog.h" />
+    <ClInclude Include="Sources\Frontend\GlottisPanel.h" />
+    <ClInclude Include="Sources\Frontend\GlottisPicture.h" />
+    <ClInclude Include="Sources\Frontend\Graph.h" />
+    <ClInclude Include="Sources\Frontend\IconsXpm.h" />
+    <ClInclude Include="Sources\Frontend\LfPulseDialog.h" />
+    <ClInclude Include="Sources\Frontend\LfPulsePicture.h" />
+    <ClInclude Include="Sources\Frontend\MainWindow.h" />
+    <ClInclude Include="Sources\Frontend\PhoneticParamsDialog.h" />
+    <ClInclude Include="Sources\Frontend\PoleZeroDialog.h" />
+    <ClInclude Include="Sources\Frontend\PoleZeroPlot.h" />
+    <ClInclude Include="Sources\Frontend\SignalComparisonPicture.h" />
+    <ClInclude Include="Sources\Frontend\SignalPage.h" />
+    <ClInclude Include="Sources\Frontend\SignalPicture.h" />
+    <ClInclude Include="Sources\Frontend\SilentMessageBox.h" />
+    <ClInclude Include="Sources\Frontend\SimpleSpectrumPicture.h" />
+    <ClInclude Include="Sources\Frontend\SpectrogramPicture.h" />
+    <ClInclude Include="Sources\Frontend\SpectrogramPlot.h" />
+    <ClInclude Include="Sources\Frontend\SpectrumOptionsDialog.h" />
+    <ClInclude Include="Sources\Frontend\SpectrumPicture.h" />
+    <ClInclude Include="Sources\Frontend\SynthesisThread.h" />
+    <ClInclude Include="Sources\Frontend\TdsOptionsDialog.h" />
+    <ClInclude Include="Sources\Frontend\TdsPage.h" />
+    <ClInclude Include="Sources\Frontend\TdsSpatialSignalPicture.h" />
+    <ClInclude Include="Sources\Frontend\TdsTimeSignalPicture.h" />
+    <ClInclude Include="Sources\Frontend\TdsTubePicture.h" />
+    <ClInclude Include="Sources\Frontend\TimeAxisPicture.h" />
+    <ClInclude Include="Sources\Frontend\TransitionDialog.h" />
+    <ClInclude Include="Sources\Frontend\VocalTractDialog.h" />
+    <ClInclude Include="Sources\Frontend\VocalTractPage.h" />
+    <ClInclude Include="Sources\Frontend\VocalTractPicture.h" />
+    <ClInclude Include="Sources\Frontend\VocalTractShapesDialog.h" />
+    <ClInclude Include="Sources\Backend\AnatomyParams.h" />
+    <ClInclude Include="Sources\Backend\Dsp.h" />
+    <ClInclude Include="Sources\Backend\F0EstimatorYin.h" />
+    <ClInclude Include="Sources\Backend\Geometry.h" />
+    <ClInclude Include="Sources\Backend\GesturalScore.h" />
+    <ClInclude Include="Sources\Backend\Glottis.h" />
+    <ClInclude Include="Sources\Backend\IirFilter.h" />
+    <ClInclude Include="Sources\Backend\ImpulseExcitation.h" />
+    <ClInclude Include="Sources\Backend\LfPulse.h" />
+    <ClInclude Include="Sources\Backend\Matrix2x2.h" />
+    <ClInclude Include="Sources\Backend\PoleZeroPlan.h" />
+    <ClInclude Include="Sources\Backend\Sampa.h" />
+    <ClInclude Include="Sources\Backend\SegmentSequence.h" />
+    <ClInclude Include="Sources\Backend\Signal.h" />
+    <ClInclude Include="Sources\Backend\SoundLib.h" />
+    <ClInclude Include="Sources\Backend\Splines.h" />
+    <ClInclude Include="Sources\Backend\StaticPhone.h" />
+    <ClInclude Include="Sources\Backend\Surface.h" />
+    <ClInclude Include="Sources\Backend\TdsModel.h" />
+    <ClInclude Include="Sources\Backend\TimeFunction.h" />
+    <ClInclude Include="Sources\Backend\TlModel.h" />
+    <ClInclude Include="Sources\Backend\TriangularGlottis.h" />
+    <ClInclude Include="Sources\Backend\Tube.h" />
+    <ClInclude Include="Sources\Backend\TubeSequence.h" />
+    <ClInclude Include="Sources\Backend\TwoMassModel.h" />
+    <ClInclude Include="Sources\Backend\VocalTract.h" />
+    <ClInclude Include="Sources\Backend\VoiceQualityEstimator.h" />
+    <ClInclude Include="Sources\Backend\VowelLf.h" />
+    <ClInclude Include="Sources\Backend\XmlHelper.h" />
+    <ClInclude Include="Sources\Backend\XmlNode.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VocalTractLab2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VocalTractLab2.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

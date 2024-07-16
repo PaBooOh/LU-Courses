@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9B93E13-A27D-42B6-BE82-7B564A6071BA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VocalTractLabApi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>VocalTractLabApi.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>VocalTractLabApi.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="VocalTractLabApi.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\AnatomyParams.cpp" />
+    <ClCompile Include="Sources\Dsp.cpp" />
+    <ClCompile Include="Sources\F0EstimatorYin.cpp" />
+    <ClCompile Include="Sources\GeometricGlottis.cpp" />
+    <ClCompile Include="Sources\Geometry.cpp" />
+    <ClCompile Include="Sources\GesturalScore.cpp" />
+    <ClCompile Include="Sources\Glottis.cpp" />
+    <ClCompile Include="Sources\IirFilter.cpp" />
+    <ClCompile Include="Sources\ImpulseExcitation.cpp" />
+    <ClCompile Include="Sources\LfPulse.cpp" />
+    <ClCompile Include="Sources\Matrix2x2.cpp" />
+    <ClCompile Include="Sources\PoleZeroPlan.cpp" />
+    <ClCompile Include="Sources\Sampa.cpp" />
+    <ClCompile Include="Sources\SegmentSequence.cpp" />
+    <ClCompile Include="Sources\Signal.cpp" />
+    <ClCompile Include="Sources\SoundLib.cpp" />
+    <ClCompile Include="Sources\Splines.cpp" />
+    <ClCompile Include="Sources\StaticPhone.cpp" />
+    <ClCompile Include="Sources\Surface.cpp" />
+    <ClCompile Include="Sources\Synthesizer.cpp" />
+    <ClCompile Include="Sources\TdsModel.cpp" />
+    <ClCompile Include="Sources\TimeFunction.cpp" />
+    <ClCompile Include="Sources\TlModel.cpp" />
+    <ClCompile Include="Sources\TriangularGlottis.cpp" />
+    <ClCompile Include="Sources\Tube.cpp" />
+    <ClCompile Include="Sources\TwoMassModel.cpp" />
+    <ClCompile Include="Sources\VocalTract.cpp" />
+    <ClCompile Include="Sources\VoiceQualityEstimator.cpp" />
+    <ClCompile Include="Sources\VowelLf.cpp" />
+    <ClCompile Include="Sources\VocalTractLabApi.cpp" />
+    <ClCompile Include="Sources\XmlHelper.cpp" />
+    <ClCompile Include="Sources\XmlNode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\AnatomyParams.h" />
+    <ClInclude Include="Sources\Ddc.h" />
+    <ClInclude Include="Sources\Dsp.h" />
+    <ClInclude Include="Sources\Export.h" />
+    <ClInclude Include="Sources\F0EstimatorYin.h" />
+    <ClInclude Include="Sources\GeometricGlottis.h" />
+    <ClInclude Include="Sources\Geometry.h" />
+    <ClInclude Include="Sources\GesturalScore.h" />
+    <ClInclude Include="Sources\Glottis.h" />
+    <ClInclude Include="Sources\IirFilter.h" />
+    <ClInclude Include="Sources\ImpulseExcitation.h" />
+    <ClInclude Include="Sources\LfPulse.h" />
+    <ClInclude Include="Sources\Matrix2x2.h" />
+    <ClInclude Include="Sources\PhysicalConstants.h" />
+    <ClInclude Include="Sources\PoleZeroPlan.h" />
+    <ClInclude Include="Sources\Sampa.h" />
+    <ClInclude Include="Sources\SegmentSequence.h" />
+    <ClInclude Include="Sources\Signal.h" />
+    <ClInclude Include="Sources\SoundLib.h" />
+    <ClInclude Include="Sources\Splines.h" />
+    <ClInclude Include="Sources\StaticPhone.h" />
+    <ClInclude Include="Sources\Surface.h" />
+    <ClInclude Include="Sources\Synthesizer.h" />
+    <ClInclude Include="Sources\TdsModel.h" />
+    <ClInclude Include="Sources\TimeFunction.h" />
+    <ClInclude Include="Sources\TlModel.h" />
+    <ClInclude Include="Sources\TriangularGlottis.h" />
+    <ClInclude Include="Sources\Tube.h" />
+    <ClInclude Include="Sources\TubeSequence.h" />
+    <ClInclude Include="Sources\TwoMassModel.h" />
+    <ClInclude Include="Sources\VocalTract.h" />
+    <ClInclude Include="Sources\VoiceQualityEstimator.h" />
+    <ClInclude Include="Sources\VowelLf.h" />
+    <ClInclude Include="Sources\VocalTractLabApi.h" />
+    <ClInclude Include="Sources\XmlHelper.h" />
+    <ClInclude Include="Sources\XmlNode.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
