@@ -1,0 +1,25 @@
+
+SELECT * , "SID" + 42 , LENGTH("FIRST")
+FROM "STUDENTS"
+WHERE "LAST" = 'Smith' AND ("SID" + 1) > 102;
+
+SELECT "SID" + 42 , LENGTH("FIRST")
+FROM "STUDENTS"
+WHERE "LAST" = 'Smith' AND ("SID" + 1) > 102;
+
+SELECT "SID" + 42 , LENGTH("FIRST") , *
+FROM "STUDENTS"
+WHERE "LAST" = 'Smith' AND ("SID" + 1) <= 102;
+
+SELECT "SID" + 42 , LENGTH("FIRST")
+FROM "STUDENTS"
+WHERE "LAST" = 'Smith' AND ("SID" + 1) <= 102;
+
+SELECT "SID" + 42 AS "SID+42" , * , LENGTH("FIRST") AS "Length of First"
+FROM "STUDENTS"
+WHERE "LAST" = 'Turner' AND ("SID" + 1) > 102;
+
+SELECT "SID" + 42 AS "SID+42" , LENGTH("FIRST") AS "Length of First"
+FROM "STUDENTS"
+WHERE "LAST" = 'Turner' AND ("SID" + 1) > 102;
+

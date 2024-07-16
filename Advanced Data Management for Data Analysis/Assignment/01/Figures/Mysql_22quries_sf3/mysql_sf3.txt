@@ -1,0 +1,34 @@
+4 rows in set (30,95 sec)             1
+100 rows in set (1,27 sec)           2 
+10 rows in set (46,31 sec)           3
+5 rows in set (7,61 sec)               4
+5 rows in set (3 min 6,37 sec)     5
+1 row in set (8,66 sec)                 6
+4 rows in set (1 min 0,55 sec)     7
+2 rows in set (3 min 51,98 sec)   8
+175 rows in set (7 min 59,63 sec)  9
+20 rows in set (13,86 sec)           10
+Empty set (2,23 sec)                    11
+2 rows in set (13,42 sec)              12
+43 rows in set (36,94 sec)            13
+1 row in set (2 min 56,87 sec)      14
+1 row in set (4 min 51,64 sec)      15
+26798 rows in set (6,44 sec)         16
+1 row in set (5,06 sec)                  17
+100 rows in set (14,98 sec)           18
+1 row in set (4,88 sec)                   19
+556 rows in set (13,88 sec)            20
+100 rows in set (33,52 sec)            21
+7 rows in set (1,55 sec)                  22
+
+
+ 
+
+
+
+ 
+
+
+
+
+

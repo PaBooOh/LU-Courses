@@ -1,0 +1,60 @@
+
+SELECT *
+FROM "STUDENTS";
+
+SELECT *
+FROM "RESULTS";
+
+SELECT *
+FROM "STUDENTS" "S" JOIN "RESULTS" "R"
+ON ("S"."SID" = "R"."SID");
+
+SELECT *
+FROM "STUDENTS" "S" JOIN "RESULTS" "R"
+ON ("S"."SID" = "R"."SID")
+ORDER BY "S"."SID";
+
+SELECT *
+FROM "STUDENTS" "S" JOIN "RESULTS" "R"
+ON ("S"."SID" = "R"."SID")
+ORDER BY "S"."SID", "R"."CAT";
+
+SELECT "R"."ENO", "R"."POINTS"
+FROM "STUDENTS" "S" JOIN "RESULTS" "R"
+ON ("S"."SID" = "R"."SID")
+WHERE "S"."LAST" = 'Smith';
+
+SELECT "R"."ENO", "R"."POINTS"
+FROM "STUDENTS" "S" JOIN "RESULTS" "R"
+ON ("S"."SID" = "R"."SID")
+WHERE "S"."LAST" = 'Smith'
+ORDER BY "S"."SID", "R"."CAT";
+
+
+SELECT *
+FROM "STUDENTS" "S";
+
+SELECT *
+FROM "STUDENTS" "S"
+WHERE "S"."LAST" = 'Smith';
+
+SELECT "S"."SID"
+FROM "STUDENTS" "S"
+WHERE "S"."LAST" = 'Smith';
+
+SELECT *
+FROM "RESULTS" "R";
+
+SELECT "R"."SID", "R"."CAT", "R"."ENO", "R"."POINTS"
+FROM "RESULTS" "R";
+
+SELECT "R"."CAT", "R"."ENO", "R"."POINTS"
+FROM "STUDENTS" "S" JOIN "RESULTS" "R"
+ON ("S"."SID" = "R"."SID")
+WHERE "S"."LAST" = 'Smith';
+
+SELECT "R"."ENO", "R"."POINTS"
+FROM "STUDENTS" "S" JOIN "RESULTS" "R"
+ON ("S"."SID" = "R"."SID")
+WHERE "S"."LAST" = 'Smith';
+

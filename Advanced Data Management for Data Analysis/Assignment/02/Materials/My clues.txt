@@ -1,0 +1,31 @@
+1.
+(1) 先存全局信息
+块内数-2bytes （256）
+数据量-8bytes -> yield 块数
+//数据集中的最大值-2bytes for int16；8bytes for int64 etc
+//数据集中的最小值-2bytes for int16；8bytes for int64 etc
+(2) 再存每个Block的信息
+frame选定值（取最小值）-2bytes for int16 etc
+// 选定值的block内index -2bytes
+最大偏移量 for bit packing -2bytes for int16 etc （=block内最大值-最小值）
+diff or offset组成的binaries -based on bit packing
+
+128 = 32 32 32 32
+4个frames
+
+
+0b 块值+
+
+——————————————
+2.
+0b块内数-2bytes
+0b数据量-8bytes ->yield 块数
+0b块数 --2bytes
+0b选定值 --4bytes
+...
+0b选定值 --4bytes
+
+
+0b块值+diff --2Bytes+
+
+

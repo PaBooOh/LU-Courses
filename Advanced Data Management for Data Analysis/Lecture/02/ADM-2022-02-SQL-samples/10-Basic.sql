@@ -1,0 +1,17 @@
+
+SELECT *
+FROM "STUDENTS"
+WHERE "LAST" = 'Smith';
+
+SELECT *
+FROM "STUDENTS" AS "S"
+WHERE "S"."LAST" = 'Smith';
+
+SELECT "SID", "S"."FIRST"
+FROM "STUDENTS" AS "S"
+WHERE "LAST" = 'Smith';
+
+SELECT "SID" as "SID", "S"."FIRST" as "F"
+FROM "STUDENTS" AS "S"
+WHERE "S"."LAST" = 'Smith';
+
