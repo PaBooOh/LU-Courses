@@ -1,0 +1,9 @@
+You can find an old exam in this directory, and a PDF with the solutions.
+
+This exam gives an indication of the course exam, but please note that the course topics have partly changed in the past years. 
+Questions 3, 8, 9, 10 are no longer part of the course materials this year.
+
+This year's exam will be representative of this year's course materials: 
+the lectures, 
+the required reading material, 
+and the homework exercises.

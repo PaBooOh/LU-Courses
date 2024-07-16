@@ -1,0 +1,81 @@
+<2> Evaluation
+1. Precision/Recall/F1 (THE CRANFIELD PARADIGM)
+	1.1 Disvantage
+		-recall is unknown
+	1.2 MAP: the mean over all queries / AP
+2. MULTI-LEVEL JUDGMENTS
+-CG = sum_R
+-DCG = R1+ sum_Ri/log_i, starting from i=2
+-iDCG = R1+ sum_Ri/log_i, starting from i=2, R is given by the descent order
+-nDCG = DCG/iDCG
+
+<3> 
+1. Term normalization: stemming and lemmatization.
+2. Minimum bits per symbol: H(P) = -sum P(X)log(P(X))
+3. Text compression: Huffman coding:
+	3.1 construct tree *
+	3.2 compression ratio *
+4. Index Compression
+	4.1 Postings compression
+	      -log_2^N bits per docID
+		?(i) Delta encoding
+		(ii) Variable length encoding *
+		     -Variable byte encoding reserves one bit for determining continuation of final byte.
+
+<4>
+1. Set-based approach: Query and Document are each a set of terms
+-Jaccard Similarity
+
+2. Term-weighting approach (Vector Space Model)
+    -idf has no effect on ranking one term queries
+    -base of logarithm: idf... Impact on score.
+    -tf-idf
+
+<5>
+1. Word-based: BM25, LM; Embeddings-based: neural rankers (e.g. ColBERT)
+
+<6> Probabilistic Information Retrieval
+        -The Probability Ranking Principle (PRP)
+        -p(A,B) = p(AÇB) = p(A| B)p(B) = p(B| A)p(A) 条件概率公式
+        -Bayes
+0. Binary independence model
+	-Linked dependence assumption
+	-Different documents can be modeled as the same vector
+	-p_i, r_i * 
+1. Relevance feedback
+2. BM25 model
+
+<7> Language model (also to rank docs)
+1. P('Hello World And ...') = P(Hello) * P(World|Hello) * P(And|Hello, World) * ...
+2. Query-Likelihood
+-disvantage: Sparse data problem
+-Solution: smoothing: Smoothing is a technique for estimating probabilities for missing (or unseen) words.
+
+<9> Learning to rank
+1.Pointwise learning: learning a ranking from individual pairs
+-Query-independent features (e.g., PageRank, document length)
+-Query-dependent features (e.g., BM25, cosine similarity)
+2. FEATURE-BASED LEARNING TO RANK ~
+3. EMBEDDINGS-BASED RANK LEARNING
+4. Learn from interaction data
+Implicit feedback is biased: clicks for reasons other than relevance
+Ø Position bias: higher ranked documents get more attention.
+Ø Selection bias: interactions are limited to the presented documents.
+Ø Presentation bias: results that are presented differently will be treated
+differently
+
+<10>
+0. Link analysis
+-phishing
+-click bait
+-Two intuitions about hyperlinks with anchor text:
+	 (i) The anchor text pointing to page B is a good description of page B (textual information)
+	 (ii) The hyperlink from A to B represents an endorsement of page B, by the creator of page A (quality signal)
+
+1. PageRank
+2. DIVERSITY: Diversity-oriented ranking has been proposed as a means to overcome ambiguity and redundancy during the search process
+3. 
+
+ 
+   
+
