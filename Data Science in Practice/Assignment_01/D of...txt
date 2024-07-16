@@ -1,0 +1,66 @@
+CEDAR-Center for Expanded Data Annotation and Retrieval
+VODAN-Virus Outbreak Data Network 
+HMIS-Health management information system 
+DISH-Digital Innovation and Skills Hub 
+
+
+
+——————————————————————————————
+In this section, several issues are described that are relevant
+to the problem of health data management in Africa. These are:
+(a) lack of ownership of health data in Africa; (b) lack of health data
+diversity, resulting in less relevant data-based solutions for Africa;
+(c) obstacles to the digitalization of health care in Africa;
+(d) monopolies and the commercial use of (health) data in Africa, and
+(e) differentiation in regulations with incompatible requirements
+across regions and continents.
+————P3
+The objective of data management is to “provide analytical information to help drive operational
+decision-making and strategic planning.”
+————P4
+
+The research presented in this article covers 5 years (2016-2021)
+and was carried out in two phases. In the first phase (2016-2018), the
+principal investigator served as an advisor to the East Africa Health
+Research Commission (EAHRC).
+
+During the second phase (2019-2021), a
+research group was established, led by the principal investigator, in
+countries across the whole of Africa: Uganda, Ethiopia, Kenya, Liberia,
+Nigeria, Somalia, Tanzania, Tunisia, and Zimbabwe.
+————P4
+
+The pilot started with data relevant to COVID-19. The steps of the pilot phase were identified as: (a) testing
+of the proposition without an online realization; (b) presentation of a
+clear proposition to stakeholders; (c) implementation of FAIR Equivalency analyses (as per above); (d) approval by stakeholders in all locations; (e) establishment of 10 FAIR Data Points reachable over the
+Internet; (f) machine-actionable data production (test data and real
+data); (g) running of queries over the Internet across the FAIR Data
+Points that visit the machine-actionable clinical patient data; and
+(h) completion of successful proof of concept.
+————P7
+
+The successful proof of concept confirmed that implementation of the FAIR Principles for observable patient
+records in health facilities was a relevant approach to increasing access
+to reliable observational health data.
+————P7
+
+Two systems were identified for testing: the Data Stewardship
+(DS) Wizard, which had developed the original WHO e-CRF system
+and FAIR Data Points, and CEDAR. It was concluded that the best
+match with the requirements and specifications was offered by
+CEDAR.
+————P7
+
+In order to
+put in place a trustworthy set of layers, the following have been identified
+as necessary by the VODAN Africa community: (a) a data processing
+agreement, based on a joint and common agreement among all data
+processing partners, encompassing the strictest data control and
+processing requirements and equivalent to the GDPR; (b) the FAIR Equivalency tool to analyze specific areas of attention or opt out based on the
+regulatory framework in a given jurisdiction; (c) agreements about machine-readable templates that are based on commonly used templates
+in the HMIS, such as DHIS (for clinical data only); (d) an agreement on
+repositories and levels of data security to keep data safe within the residence (repository) where the data is stored; (e) an agreement on data
+pipelines used for dashboards in the facilities providing key real-time
+aggregate data at the facility level; and (e) an agreement on the data pipelines used for the VODAN dashboard to create aggregate information
+
+————P8

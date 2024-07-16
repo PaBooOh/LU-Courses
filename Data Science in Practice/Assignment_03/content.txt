@@ -1,0 +1,29 @@
+WEEK 3 : Yes! Fieldlabs!
+So.... the point of this course is that we are implementing FIELDLABS.
+
+Why?
+
+Because in the field is where the real data science starts...
+
+The FieldLabs are all real life world problems. 
+
+We will be working in Fieldlabs in teams....
+
+Today you will hear all about these fieldlabs, how to select them and what will be expected of you....
+
+Our GUEST Lecturer today, let us present: Mustafa Kedioglu
+
+He is the expert on ICT project management. And so he will give us expert-advice on:
+
+How do you manage a project?
+How do you start?
+Why do you work in Teams?
+How do you handle the teamwork?
+How do you set goals and plan your project?
+Mustafa has loads of experience and will be open to all of your questions. 
+
+So officially the TOPIC is: Presentation of Field Labs
+
+The objective in this week is for the students to receive all information on field labs and practical tools on how to organise the process of implementation of the field labs with input on: (i) how to plan a time-bound project (ii) how to organise in a team and (iii) how to create a relevant process for an interdisciplinary data science challenge.
+
+Here is Mustafa questioning students' fieldlab presentations in 2019:
