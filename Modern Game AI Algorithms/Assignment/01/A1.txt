@@ -1,0 +1,3 @@
+The gdmc_http_client_python library has seen an API breaking update to v5.
+
+You can grab an old version from the releases page: https://github.com/nilsgawlik/gdmc_http_client_python/releases

@@ -1,0 +1,13 @@
+1. Start game (will be automatically selected by an agent only if at least one agent is not human)
+
+2. Heads / Tails
+
+3. Kicking (Defender: spread&zone) / Receive (Attacker: wedge/line)
+
+4. Place player / Setup formations / end setup
+
+5.1 Place Ball (Kicking side)
+
+5.2 Select a player (possible for receive side) 
+
+5.3 Actions (receive side)
