@@ -1,0 +1,14 @@
+Assignment 0
+Obligatory to submit!
+
+Suppose you generate n random integers between 0 and N. How many unique values do you expect? (Your random numbers might repeat!) Find a formula that expresses this number: unique_values(n,N) = ??? Experiment with various values of n and N. Repeat each experiment several times (with different random seeds) to get a more reliable estimates of the number of unique numbers you’ve generated. Are the results of experiments consistent with your formula?
+
+Deliver: a .zip file containing a single Jupyter notebook (in Python 3.x) that documents your theoretical considerations, experiments and conclusions.
+
+Deadline: 12th October 23:30.
+
+Reward: knowledge + constructive feedback + grade (which will not count, but will give you an idea of what we expect from you in the future).
+
+Bonus task: Design, implement and test any hash function that can be applied to strings (e.g., words), returning 32bit unsigned integers (uint32). It is sufficient if you find and test such a function somewhere.
+
+For more detailed information refer to the last slides of presentation "1 Introduction".
