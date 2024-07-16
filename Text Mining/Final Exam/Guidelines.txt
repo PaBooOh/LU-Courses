@@ -1,0 +1,8 @@
+Practice materials
+These practice materials are intended to help you study for the exam. The actual exam will not be the same as the practice materials.
+
+Exam Text Mining 2019
+Note that the topic authorship attribution was not a part of the course this year, so you can skip that;
+Note that other topics, in particular neural sequence models, got more attention this year;
+Note that the literature was slightly different.
+Quiz questions and answers

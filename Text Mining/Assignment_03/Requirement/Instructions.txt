@@ -1,0 +1,46 @@
+The final assignment is a research paper. 
+You work in groups of 2 students. 
+You can pick one of the pre-defined four tasks or define your own.
+
+This assignment counts for 30% of the course grade and 60% of the weighted average assignments grade. See http://tmr.liacs.nl/TM.html
+——————————————————————————————————————————————
+Topics:
+Topics to choose from (also see slides of lecture 12):
+Text Classification
+Information Extraction
+Sentiment Analysis
+Argument Mining
+——————————————————————————————————————————————
+Resources for each of the tasks:
+1. Multi-label classification of Dutch election political manifestos.
+Data: Political_election_manifestos.zip (attached).
+Paper: Verberne_2014_Automatic thematic classification of election manifestos.pdf (attached)
+==================================================================
+2. CSIRO Adverse Drug Event Corpus (Cadec) (description)
+Data: CADEC.v2.zip (attached)
+Paper: Karimi_2015_Cadec- A corpus of adverse drug event annotations.pdf (attached)
+==================================================================
+3. SemEval 2017 Task 4: Sentiment Analysis in Twitter (description). Note: only subtask A.
+Data: semeval-2017-tweets_Subtask-A.zip (attached)
+Paper: Rosenthal_2017_SemEval-2017 Task 4- Sentiment Analysis in Twitter.pdf
+==================================================================
+4. Persuasive Essays v2
+Data: ArgumentAnnotatedEssays-2.0.zip (available here)
+Paper: https://aclanthology.org/J17-3005.pdf
+Report:
+————————————————————————————————————————————
+8 pages + max 2 pages for references and appendix (research paper).
+Advice: use LaTeX on Overleaf.
+Criteria listed in separate item on Brightspace (under Assignments, also in slides of week 10)
+
+
+Deadlines:
+(December 1: proposal for your own topic; if you want to)
+December 6: select a topic (choose one of four). You don’t have to send this to us
+December 15: submit a draft of your introduction and data description sections. You receive 1 point out of the 10 for the final assignment by completing this step.
+January 16: submit the full paper
+If your submission is late, then it will be counted as re-sit (maximum grade: 6). The re-sit deadline is January 31st.
+Everything can be submitted to the Brightspace item ‘Final assignment’
+
+Due Date
+16 January 2022 23:59
