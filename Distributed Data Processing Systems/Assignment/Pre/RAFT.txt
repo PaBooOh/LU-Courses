@@ -1,0 +1,19 @@
+Starting:
+
+
+
+----------------------------
+Safety: 
+Lastly, I'll focus on safety. 
+
+(1) In LE, to prevent multiple leaders, Raft has all the servers refuse to vote if there is an alive leader 
+in the cluster. As you can see in the figure on the right, s3 initiate an unilateral election, while... As expected, they all refuse to vote.
+
+(2) Furthermore, Raft also prevents candidates with incomplete logs from winning election. In this figure, server C will be elected
+as a leader since it has the complete
+
+(3) When it comes to log replication, this figure shows that a follower may have missing/extra entries. So, Raft handles such ..., 
+which means the followers' logs are overwrriten by leader's.
+
+To prevent multiple leaders, Raft does not allow servers vote for servers 
+with term number smaller than theirs.
