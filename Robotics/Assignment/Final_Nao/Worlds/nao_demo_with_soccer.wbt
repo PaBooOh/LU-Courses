@@ -1,0 +1,118 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  info [
+    "Aldebaran's Nao H25 V5.0"
+    "NAO is a programmable, 57-cm tall humanoid robot."
+    "The body has 25 degrees of freedom (DOF)."
+    "The sensors include 2 cameras, 4 microphones, sonar rangefinder, 2 IR emitters and receivers, 1 inertial board, and 8 pressure sensors."
+  ]
+  title "Aldebaran's Nao"
+  basicTimeStep 20
+  FPS 20
+  contactProperties [
+    ContactProperties {
+      material1 "NAO foot material"
+      coulombFriction [
+        7
+      ]
+      bounce 0.3
+      bounceVelocity 0.003
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.24361781657443093 -0.6337578634266129 -0.7341670995028596 5.318492751543948
+  position -3.6696417304293547 -1.9548705192907796 3.547992753876166
+  follow "NAO"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  rotation 0 0 1 1.57079632679
+  size 25 25
+  tileSize 0.8 0.8
+}
+Nao {
+  hidden translation_11 0 0 0.1265
+  hidden rotation_11 0 1 0 0
+  hidden translation_18 0 -0.098 0.1
+  hidden rotation_18 1.6490926807371564e-08 0.9999999999999997 1.957872314477795e-08 1.3999997489140008
+  hidden translation_19 0.105 -0.015 0
+  hidden rotation_19 -1 0 0 2.9802322387695313e-08
+  hidden translation_20 0 0 0
+  hidden rotation_20 0 0 1 0
+  hidden translation_21 0.05595 0 0
+  hidden rotation_21 1 0 0 0
+  hidden translation_22 0.069 -0.013 -0.005
+  hidden rotation_22 0 1 0 0.959999972023903
+  hidden translation_23 0.014 0 0
+  hidden rotation_23 0 1 0 0.9600000008097427
+  hidden translation_24 0.014 0 0
+  hidden rotation_24 0 0.9999999999999999 0 0.9600000039856632
+  hidden translation_25 0.069 0.013 -0.005
+  hidden rotation_25 0 1 0 0.9599999720239102
+  hidden translation_26 0.014 0 0
+  hidden rotation_26 0 1 0 0.9600000008095647
+  hidden translation_27 0.014 0 0
+  hidden rotation_27 0 1 0 0.960000003986097
+  hidden translation_28 0.049 0 -0.026
+  hidden rotation_28 0 1 0 0
+  hidden translation_29 0.014 0 0
+  hidden rotation_29 0 -1 0 0.9600000005102604
+  hidden translation_30 0 0.098 0.1
+  hidden rotation_30 -3.3473166303602394e-08 0.9999999999999989 -3.600417295061923e-08 1.49797005161762
+  hidden translation_31 0.105 0.015 0
+  hidden rotation_31 1 0 0 0
+  hidden translation_32 0 0 0
+  hidden rotation_32 0 0 1 0
+  hidden translation_33 0.05595 0 0
+  hidden rotation_33 1 0 0 0
+  hidden translation_34 0.069 -0.013 -0.005
+  hidden rotation_34 0 0.9999999999999999 0 0.9599999756709794
+  hidden translation_35 0.014 0 0
+  hidden rotation_35 0 1 0 0.9600000030183504
+  hidden translation_36 0.014 0 0
+  hidden rotation_36 0 1 0 0.9600000043632682
+  hidden translation_37 0.069 0.013 -0.005
+  hidden rotation_37 0 1 0 0.9599999756699894
+  hidden translation_38 0.014 0 0
+  hidden rotation_38 0 1 0 0.9600000030195188
+  hidden translation_39 0.014 0 0
+  hidden rotation_39 0 1 0 0.9600000043629844
+  hidden translation_40 0.049 0 -0.026
+  hidden translation_41 0.014 0 0
+  hidden rotation_41 0 -1 0 0.9600000010612519
+  hidden translation_42 0 -0.05 -0.085
+  hidden rotation_42 0 -0.7071067811865475 -0.7071067811865475 1.9992005623875177e-07
+  hidden translation_43 0 0 0
+  hidden rotation_43 -1 0 0 3.332000937312532e-07
+  hidden translation_44 0 0 0
+  hidden rotation_44 0 -1 0 1.931411236050088e-07
+  hidden translation_45 0 0 -0.1
+  hidden rotation_45 0 -0.9999999999999999 0 2.086162567138673e-07
+  hidden translation_46 0 0 -0.1029
+  hidden rotation_46 0 -1 0 1.8848643661548975e-07
+  hidden translation_47 0 0 0
+  hidden rotation_47 -1 0 0 3.462716948575456e-07
+  hidden translation_52 0 0.05 -0.085
+  hidden rotation_52 0 -0.7071067811865476 0.7071067811865476 1.976862424823881e-07
+  hidden translation_53 0 0 0
+  hidden rotation_53 1 0 0 3.2917740992269735e-07
+  hidden translation_54 0 0 0
+  hidden rotation_54 0 -0.9999999999999999 0 1.8371385344770487e-07
+  hidden translation_55 0 0 -0.1
+  hidden rotation_55 0 1 0 1.7120130796843858e-07
+  hidden translation_56 0 0 -0.1029
+  hidden rotation_56 0 -0.9999999999999999 0 2.043144285798385e-07
+  hidden translation_57 0 0 0
+  hidden rotation_57 1 0 0 3.4498682328433513e-07
+  translation -0.257349524256613 0.4936317227892191 0.33296670185905947
+  rotation 0.0010540606176152897 -0.0038780075573347085 0.9999919249741969 0.527676965888399
+  controller "<extern>"
+}
+Ball {
+  translation 0.84 1.33 0.12
+  radius 0.1
+}
